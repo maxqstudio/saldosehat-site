@@ -1,6 +1,3 @@
-FILE: index.html
-
-```html
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -8,10 +5,14 @@ FILE: index.html
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>SaldoSehat - Catatan Keuangan Pribadi</title>
-  <meta name="description" content="SaldoSehat membantu mencatat pemasukan, pengeluaran, Dompet, target, pinjaman, dan piutang dalam satu aplikasi." />
+  <meta
+    name="description"
+    content="SaldoSehat membantu mencatat pemasukan, pengeluaran, Dompet, target, pinjaman, dan piutang dalam satu aplikasi."
+  />
 
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
   <header class="site-header">
     <div class="container header-inner">
@@ -51,8 +52,11 @@ FILE: index.html
 
         <div class="app-showcase">
           <div class="phone-shell">
-            <div class="phone-camera"></div>
-            <img id="appScreenshot" src="images/screenshot-beranda.png" alt="Tampilan Beranda SaldoSehat" />
+            <img
+              id="appScreenshot"
+              src="images/saldosehat-beranda.png"
+              alt="Tampilan Beranda SaldoSehat"
+            />
           </div>
 
           <div class="carousel-caption">
@@ -61,11 +65,16 @@ FILE: index.html
           </div>
 
           <div class="carousel-controls">
-            <button type="button" class="carousel-btn" onclick="prevScreenshot()" aria-label="Screenshot sebelumnya">
+            <button
+              type="button"
+              class="carousel-btn"
+              onclick="prevScreenshot()"
+              aria-label="Screenshot sebelumnya"
+            >
               ‹
             </button>
 
-            <div class="carousel-dots" aria-label="Navigasi screenshot">
+            <div class="carousel-dots" aria-label="Navigasi screenshot aplikasi">
               <button type="button" class="dot active" onclick="goScreenshot(0)" aria-label="Beranda"></button>
               <button type="button" class="dot" onclick="goScreenshot(1)" aria-label="Transaksi"></button>
               <button type="button" class="dot" onclick="goScreenshot(2)" aria-label="Dompet"></button>
@@ -74,7 +83,12 @@ FILE: index.html
               <button type="button" class="dot" onclick="goScreenshot(5)" aria-label="Tanya SaldoSehat"></button>
             </div>
 
-            <button type="button" class="carousel-btn" onclick="nextScreenshot()" aria-label="Screenshot berikutnya">
+            <button
+              type="button"
+              class="carousel-btn"
+              onclick="nextScreenshot()"
+              aria-label="Screenshot berikutnya"
+            >
               ›
             </button>
           </div>
@@ -221,4 +235,3 @@ FILE: index.html
   </script>
 </body>
 </html>
-```
