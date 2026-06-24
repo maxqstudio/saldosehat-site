@@ -1,21 +1,27 @@
+FILE: index.html
+
+```html
 <!DOCTYPE html>
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>SaldoSehat - Catatan Keuangan Pribadi</title>
   <meta name="description" content="SaldoSehat membantu mencatat pemasukan, pengeluaran, Dompet, target, pinjaman, dan piutang dalam satu aplikasi." />
+
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <div class="brand">
+      <a class="brand link-brand" href="index.html">
         <div>
           <div class="brand-name">SaldoSehat</div>
           <div class="brand-subtitle">Catatan keuangan pribadi</div>
         </div>
-      </div>
+      </a>
+
       <nav class="nav">
         <a href="privacy.html">Privasi</a>
         <a href="terms.html">Ketentuan</a>
@@ -27,46 +33,85 @@
   <main>
     <section class="hero">
       <div class="container hero-grid">
-        <div>
+        <div class="hero-copy">
           <p class="eyebrow">Aplikasi keuangan personal</p>
+
           <h1>Catat keuangan harian dengan lebih rapi.</h1>
+
           <p class="hero-text">
-            SaldoSehat membantu Anda mencatat pemasukan, pengeluaran, Dompet, target,
-            pinjaman, dan piutang dalam satu aplikasi yang sederhana.
+            SaldoSehat membantu Anda mencatat pemasukan, pengeluaran, Dompet,
+            target, pinjaman, dan piutang dalam satu aplikasi yang sederhana.
           </p>
+
           <div class="hero-actions">
             <a class="button primary" href="privacy.html">Baca Kebijakan Privasi</a>
             <a class="button secondary" href="support.html">Hubungi Dukungan</a>
           </div>
         </div>
 
-        <div class="app-carousel" aria-label="Tampilan aplikasi SaldoSehat"> <div class="carousel-frame"> <img id="appScreenshot" src="images/screenshot-beranda.png" alt="Tampilan Beranda SaldoSehat" /> </div> <div class="carousel-controls"> <button type="button" class="carousel-btn" onclick="prevScreenshot()" aria-label="Screenshot sebelumnya"> ‹ </button> <div class="carousel-dots" aria-label="Navigasi screenshot"> <button type="button" class="dot active" onclick="goScreenshot(0)" aria-label="Beranda"></button> <button type="button" class="dot" onclick="goScreenshot(1)" aria-label="Transaksi"></button> <button type="button" class="dot" onclick="goScreenshot(2)" aria-label="Dompet"></button> <button type="button" class="dot" onclick="goScreenshot(3)" aria-label="Target"></button> <button type="button" class="dot" onclick="goScreenshot(4)" aria-label="Pinjaman"></button> <button type="button" class="dot" onclick="goScreenshot(5)" aria-label="Tanya SaldoSehat"></button> </div> <button type="button" class="carousel-btn" onclick="nextScreenshot()" aria-label="Screenshot berikutnya"> › </button> </div> </div>      </div>
+        <div class="app-showcase">
+          <div class="phone-shell">
+            <div class="phone-camera"></div>
+            <img id="appScreenshot" src="images/screenshot-beranda.png" alt="Tampilan Beranda SaldoSehat" />
+          </div>
+
+          <div class="carousel-caption">
+            <strong id="screenshotTitle">Beranda</strong>
+            <span id="screenshotDesc">Ringkasan utama keuangan pribadi.</span>
+          </div>
+
+          <div class="carousel-controls">
+            <button type="button" class="carousel-btn" onclick="prevScreenshot()" aria-label="Screenshot sebelumnya">
+              ‹
+            </button>
+
+            <div class="carousel-dots" aria-label="Navigasi screenshot">
+              <button type="button" class="dot active" onclick="goScreenshot(0)" aria-label="Beranda"></button>
+              <button type="button" class="dot" onclick="goScreenshot(1)" aria-label="Transaksi"></button>
+              <button type="button" class="dot" onclick="goScreenshot(2)" aria-label="Dompet"></button>
+              <button type="button" class="dot" onclick="goScreenshot(3)" aria-label="Target"></button>
+              <button type="button" class="dot" onclick="goScreenshot(4)" aria-label="Pinjaman"></button>
+              <button type="button" class="dot" onclick="goScreenshot(5)" aria-label="Tanya SaldoSehat"></button>
+            </div>
+
+            <button type="button" class="carousel-btn" onclick="nextScreenshot()" aria-label="Screenshot berikutnya">
+              ›
+            </button>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="section">
       <div class="container">
         <h2>Fitur utama</h2>
+
         <div class="cards">
           <article class="card">
             <h3>Catatan harian</h3>
             <p>Catat pemasukan dan pengeluaran agar arus kas pribadi lebih mudah dipantau.</p>
           </article>
+
           <article class="card">
             <h3>Dompet</h3>
             <p>Pisahkan catatan berdasarkan Dompet seperti uang tunai, rekening, atau e-wallet.</p>
           </article>
+
           <article class="card">
             <h3>Target</h3>
             <p>Buat target tabungan dan pantau progresnya secara sederhana.</p>
           </article>
+
           <article class="card">
             <h3>Pinjaman & piutang</h3>
             <p>Catat pinjaman dan piutang agar kewajiban dan tagihan pribadi tidak terlupa.</p>
           </article>
+
           <article class="card">
             <h3>Export & backup</h3>
             <p>Simpan salinan data pribadi melalui fitur export dan backup yang tersedia di aplikasi.</p>
           </article>
+
           <article class="card">
             <h3>Tanya SaldoSehat</h3>
             <p>Gunakan bantuan berbasis template untuk membaca ringkasan data keuangan pribadi.</p>
@@ -78,10 +123,12 @@
     <section class="section soft">
       <div class="container narrow">
         <h2>Privasi sederhana</h2>
+
         <p>
-          Data utama SaldoSehat disimpan di perangkat Anda. Gunakan fitur export atau backup
-          jika ingin menyimpan salinan data pribadi. Untuk detail lengkap, baca Kebijakan Privasi.
+          Data utama SaldoSehat disimpan di perangkat Anda. Gunakan fitur export
+          atau backup jika ingin menyimpan salinan data pribadi.
         </p>
+
         <a class="text-link" href="privacy.html">Buka Kebijakan Privasi →</a>
       </div>
     </section>
@@ -90,15 +137,88 @@
   <footer class="site-footer">
     <div class="container footer-inner">
       <p>© 2026 SaldoSehat. All rights reserved.</p>
+
       <div class="footer-links">
         <a href="privacy.html">Kebijakan Privasi</a>
         <a href="terms.html">Syarat & Ketentuan</a>
         <a href="support.html">Dukungan</a>
       </div>
     </div>
-  </footer
+  </footer>
 
-  <script> const screenshots = [ { src: "images/saldosehat-beranda.png", alt: "Tampilan Beranda SaldoSehat" }, { src: "images/saldosehat-transaksi.png", alt: "Tampilan Transaksi SaldoSehat" }, { src: "images/saldosehat-dompet.png", alt: "Tampilan Dompet SaldoSehat" }, { src: "images/saldosehat-target.png", alt: "Tampilan Target SaldoSehat" }, { src: "images/saldosehat-pinjaman.png", alt: "Tampilan Pinjaman SaldoSehat" }, { src: "images/saldosehat-tanya.png", alt: "Tampilan Tanya SaldoSehat" } ]; let currentScreenshot = 0; function renderScreenshot() { const image = document.getElementById("appScreenshot"); const dots = document.querySelectorAll(".dot"); image.src = screenshots[currentScreenshot].src; image.alt = screenshots[currentScreenshot].alt; dots.forEach((dot, index) => { dot.classList.toggle("active", index === currentScreenshot); }); } function nextScreenshot() { currentScreenshot = (currentScreenshot + 1) % screenshots.length; renderScreenshot(); } function prevScreenshot() { currentScreenshot = (currentScreenshot - 1 + screenshots.length) % screenshots.length; renderScreenshot(); } function goScreenshot(index) { currentScreenshot = index; renderScreenshot(); } 
+  <script>
+    const screenshots = [
+      {
+        src: "images/saldosehat-beranda.png",
+        alt: "Tampilan Beranda SaldoSehat",
+        title: "Beranda",
+        desc: "Ringkasan utama keuangan pribadi."
+      },
+      {
+        src: "images/saldosehat-transaksi.png",
+        alt: "Tampilan Transaksi SaldoSehat",
+        title: "Transaksi",
+        desc: "Catatan uang masuk, keluar, dan mutasi."
+      },
+      {
+        src: "images/saldosehat-dompet.png",
+        alt: "Tampilan Dompet SaldoSehat",
+        title: "Dompet",
+        desc: "Pantau saldo berdasarkan tempat uang."
+      },
+      {
+        src: "images/saldosehat-target.png",
+        alt: "Tampilan Target SaldoSehat",
+        title: "Target",
+        desc: "Pantau target tabungan dan budget."
+      },
+      {
+        src: "images/saldosehat-pinjaman.png",
+        alt: "Tampilan Pinjaman SaldoSehat",
+        title: "Pinjaman",
+        desc: "Catat utang dan piutang yang berjalan."
+      },
+      {
+        src: "images/saldosehat-tanya.png",
+        alt: "Tampilan Tanya SaldoSehat",
+        title: "Tanya SaldoSehat",
+        desc: "Baca ringkasan data dengan pertanyaan template."
+      }
+    ];
+
+    let currentScreenshot = 0;
+
+    function renderScreenshot() {
+      const image = document.getElementById("appScreenshot");
+      const title = document.getElementById("screenshotTitle");
+      const desc = document.getElementById("screenshotDesc");
+      const dots = document.querySelectorAll(".dot");
+
+      image.src = screenshots[currentScreenshot].src;
+      image.alt = screenshots[currentScreenshot].alt;
+      title.textContent = screenshots[currentScreenshot].title;
+      desc.textContent = screenshots[currentScreenshot].desc;
+
+      dots.forEach((dot, index) => {
+        dot.classList.toggle("active", index === currentScreenshot);
+      });
+    }
+
+    function nextScreenshot() {
+      currentScreenshot = (currentScreenshot + 1) % screenshots.length;
+      renderScreenshot();
+    }
+
+    function prevScreenshot() {
+      currentScreenshot = (currentScreenshot - 1 + screenshots.length) % screenshots.length;
+      renderScreenshot();
+    }
+
+    function goScreenshot(index) {
+      currentScreenshot = index;
+      renderScreenshot();
+    }
   </script>
 </body>
 </html>
+```
