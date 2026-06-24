@@ -154,22 +154,7 @@ p {
   margin-top: 28px;
 }
 
-.hero-shot {
-  display: flex;
-  justify-content: center;
-}
-
-.hero-shot img {
-  width: 100%;
-  max-width: 320px;
-  max-height: 680px;
-  object-fit: cover;
-  object-position: top;
-  border-radius: 28px;
-  border: 1px solid var(--line);
-  box-shadow: 0 18px 45px rgba(12, 55, 38, 0.14);
-  display: block;
-}
+.hero-grid { display: grid; grid-template-columns: minmax(0, 1fr) 420px; align-items: center; gap: 48px; } .app-carousel { width: 100%; max-width: 420px; margin: 0 auto; } .carousel-frame { width: 100%; max-height: 720px; overflow: hidden; border-radius: 32px; border: 1px solid var(--line); background: #ffffff; box-shadow: 0 22px 52px rgba(12, 55, 38, 0.16); } .carousel-frame img { width: 100%; max-height: 720px; object-fit: cover; object-position: top center; display: block; } .carousel-controls { margin-top: 16px; display: flex; align-items: center; justify-content: center; gap: 14px; } .carousel-btn { width: 42px; height: 42px; border-radius: 999px; border: 1px solid var(--line); background: #ffffff; color: var(--green-900); font-size: 28px; line-height: 1; cursor: pointer; box-shadow: 0 8px 18px rgba(12, 55, 38, 0.08); } .carousel-btn:hover { background: var(--green-50); } .carousel-dots { display: flex; align-items: center; gap: 8px; } .dot { width: 9px; height: 9px; border-radius: 999px; border: 0; background: #cfdad4; cursor: pointer; padding: 0; } .dot.active { width: 24px; background: var(--green-700); } @media (max-width: 860px) { .hero-grid { grid-template-columns: 1fr; } .app-carousel { max-width: 340px; } .carousel-frame { max-height: 640px; border-radius: 26px; } .carousel-frame img { max-height: 640px; } }
 
 .button {
   display: inline-flex;
