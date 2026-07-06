@@ -1,64 +1,144 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dukungan - SaldoSehat</title>
-  <meta name="description" content="Halaman bantuan dan dukungan SaldoSehat." />
+  <title>Support - SaldoSehat</title>
+  <meta name="description" content="Help and support page for SaldoSehat" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand link-brand" href="index.html">
-        <div>
-          <div class="brand-name">SaldoSehat</div>
-          <div class="brand-subtitle">Catatan keuangan pribadi</div>
-        </div>
+      <a class="brand link-brand" href="index.html" aria-label="SaldoSehat home">
+        <span class="brand-mark" aria-hidden="true">▣</span>
+        <span>
+          <span class="brand-name">SaldoSehat</span>
+          <span class="brand-subtitle">Personal finance tracker</span>
+        </span>
       </a>
-      <nav class="nav">
-        <a href="privacy.html">Privasi</a>
-        <a href="terms.html">Ketentuan</a>
-        <a href="support.html">Dukungan</a>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="support.html">Support</a>
       </nav>
     </div>
   </header>
 
   <main class="page">
     <div class="container narrow">
-      <h1>Bantuan & Dukungan</h1>
+      <p class="eyebrow">Help & Support</p>
+      <h1>Support</h1>
       <p>
-        Butuh bantuan menggunakan SaldoSehat? Kirim pertanyaan, laporan bug, atau saran fitur
-        melalui email dukungan.
+        Need help using SaldoSehat? Send questions, bug reports, or feature suggestions
+        through the support email
       </p>
 
-      <div class="content-card">
-        <h2>Email dukungan</h2>
-        <p><strong>saldosehat.support@maxqstudio.dev</strong></p>
+      <div class="content-card support-card">
+        <h2>Support email</h2>
+        <p><strong><a href="mailto:saldosehat.support@maxqstudio.dev">saldosehat.support@maxqstudio.dev</a></strong></p>
         <p>
-          Saat menghubungi dukungan, sertakan informasi yang relevan seperti jenis perangkat,
-          versi Android, dan penjelasan singkat masalah yang dialami.
+          When contacting support, include relevant information such as device model,
+          Android version, app version, the page you were using, and a short description
+          of the issue
         </p>
+        <a class="button primary" href="mailto:saldosehat.support@maxqstudio.dev?subject=SaldoSehat%20Support%20Request">Send Email</a>
       </div>
 
-      <h2>Hal yang dapat kami bantu</h2>
-      <ul>
-        <li>Pertanyaan penggunaan fitur SaldoSehat</li>
-        <li>Laporan bug atau tampilan yang bermasalah</li>
-        <li>Saran fitur dan masukan produk</li>
-        <li>Pertanyaan umum tentang data, export, backup, dan privasi</li>
-      </ul>
+      <h2>FAQ</h2>
+      <div class="faq-list">
+        <details>
+          <summary>What should I add first?</summary>
+          <p>
+            Start with Wallets. Add your cash, bank account, e-wallet, or e-money card first.
+            Then record income and expenses using the correct wallet so your balances stay easier
+            to review. After that, add targets, loans, receivables, and create backups regularly
+          </p>
+        </details>
 
-      <h2>Catatan penting</h2>
+        <details>
+          <summary>How do I add a Wallet?</summary>
+          <p>
+            A Wallet represents where your money is stored, such as cash, a bank account,
+            an e-wallet, or an e-money card. After creating a Wallet, choose it when recording
+            a transaction so the related balance is updated correctly
+          </p>
+        </details>
+
+        <details>
+          <summary>How do I record income?</summary>
+          <p>
+            Use Transactions and choose an income record. Add the amount, date, category,
+            wallet, and an optional note. Examples include salary, business income, bonuses,
+            or other money received
+          </p>
+        </details>
+
+        <details>
+          <summary>How do I record expenses?</summary>
+          <p>
+            Use Transactions and choose an expense record. Add the amount, date, category,
+            wallet, and an optional note. Make sure the selected Wallet is correct so your
+            balance remains easier to review
+          </p>
+        </details>
+
+        <details>
+          <summary>How do backup and restore work?</summary>
+          <p>
+            SaldoSehat backup files use the <strong>.saldosehat</strong> format. Store backup
+            files in a safe place that you trust. Restore accepts valid SaldoSehat backup files
+            only. Generic <strong>.json</strong> files are not supported for restore
+          </p>
+        </details>
+
+        <details>
+          <summary>What is an e-money card?</summary>
+          <p>
+            An e-money card is a prepaid wallet balance, such as a transport card, toll card,
+            or prepaid electronic money card. It is not a credit card, paylater product, loan,
+            or credit limit
+          </p>
+        </details>
+
+        <details>
+          <summary>What does notification privacy do?</summary>
+          <p>
+            Hide notification details changes only the notification content. When enabled,
+            notifications still appear but use more private wording. When disabled, reminders
+            can be more informative, but they should not show money amounts in the notification
+            title or body
+          </p>
+        </details>
+
+        <details>
+          <summary>What is Ask?</summary>
+          <p>
+            Ask helps you read summaries based on data available in the app. It is based on
+            available questions and templates, and it is not an official financial advisor
+          </p>
+        </details>
+
+        <details>
+          <summary>How do I report a bug or suggest a feature?</summary>
+          <p>
+            Contact support at saldosehat.support@maxqstudio.dev. Include the steps you took,
+            what happened, what you expected, the page you were using, and device details when
+            possible. Avoid sharing sensitive financial data unless it is necessary
+          </p>
+        </details>
+      </div>
+
+      <h2>Important note</h2>
       <p>
-        Jangan mengirim file export, backup, screenshot berisi data sensitif, atau informasi
-        keuangan pribadi jika tidak diperlukan. Jika perlu mengirim screenshot, samarkan data
-        pribadi terlebih dahulu.
+        Do not send export files, backup files, or screenshots containing sensitive personal
+        finance data unless they are needed. If you send a screenshot, hide or blur private data first
       </p>
 
       <div class="support-links">
-        <a class="button primary" href="mailto:saldosehat.support@maxqstudio.dev">Kirim Email</a>
-        <a class="button secondary" href="privacy.html">Kebijakan Privasi</a>
+        <a class="button primary" href="mailto:saldosehat.support@maxqstudio.dev?subject=SaldoSehat%20Bug%20Report">Report a Bug</a>
+        <a class="button secondary" href="privacy.html">Privacy Policy</a>
       </div>
     </div>
   </main>
@@ -67,9 +147,9 @@
     <div class="container footer-inner">
       <p>© 2026 SaldoSehat. All rights reserved.</p>
       <div class="footer-links">
-        <a href="index.html">Beranda</a>
-        <a href="privacy.html">Kebijakan Privasi</a>
-        <a href="terms.html">Syarat & Ketentuan</a>
+        <a href="index.html">Home</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms</a>
       </div>
     </div>
   </footer>
